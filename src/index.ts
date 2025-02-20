@@ -1,1 +1,1 @@
-export { getHeader, normalizeHeaders, type HeaderMap } from "./headers.js";
+export { getHeader, hasHeader, normalizeHeaders, type HeaderMap } from "./headers.js";
