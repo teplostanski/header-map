@@ -7,9 +7,10 @@ export function normalizeHeaders(headers: HeaderMap): HeaderMap {
 }
 
 export function getHeader(headers: HeaderMap, name: string): string | undefined {
-  return normalizeHeaders(headers)[name.toLowerCase()];
-}
-
-export function hasHeader(headers: HeaderMap, name: string): boolean {
-  return getHeader(headers, name) !== undefined;
+  const want = name.toLowerCase();
+  if (want in headers) return headers[want];
+  for (const [k, v] of Object.entries(headers)) {
+    if (k.toLowerCase() === want) return v;
+  }
+  return undefined;
 }
