@@ -14,3 +14,7 @@ export function getHeader(headers: HeaderMap, name: string): string | undefined 
   }
   return undefined;
 }
+
+export function hasHeader(headers: HeaderMap, name: string): boolean {
+  return getHeader(headers, name) !== undefined;
+}
