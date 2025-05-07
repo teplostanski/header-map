@@ -1,6 +1,6 @@
 {
   "name": "@teplostanski/header-map",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "license": "MIT",
   "author": {
@@ -12,7 +12,8 @@
   "engines": { "node": ">=20" },
   "exports": "./src/index.ts",
   "scripts": {
-    "typecheck": "tsc -p tsconfig.json"
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
   },
   "devDependencies": {
     "typescript": "^5.7.0",
