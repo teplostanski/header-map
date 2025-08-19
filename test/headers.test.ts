@@ -5,8 +5,8 @@ describe("normalizeHeaders", () => {
   it("lowercases keys", () => {
     expect(normalizeHeaders({ "X-Foo": "1" })).toEqual({ "x-foo": "1"   it("returns true when present", () => {
     expect(hasHeader({ ETag: "abc" }, "etag")).toBe(true);
-    it("returns undefined when absent", () => {
-    expect(getHeader({}, "missing")).toBeUndefined();
+    it("normalizes mixed-case keys", () => {
+    expect(normalizeHeaders({ "X-A": "1", "x-a": "2" })).toEqual({ "x-a": "2" });
   });
 });
 });
