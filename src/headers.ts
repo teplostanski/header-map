@@ -6,7 +6,6 @@ export function normalizeHeaders(headers: HeaderMap): HeaderMap {
   return out;
 }
 
-/** Case-insensitive lookup; scans object keys. */
 export function getHeader(headers: HeaderMap, name: string): string | undefined {
   const want = name.toLowerCase();
   if (want in headers) return headers[want];
