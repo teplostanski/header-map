@@ -4,6 +4,9 @@
 
 ## Install
 
+`npm install @teplostanski/header-map` also works.
+
+
 ```bash
 pnpm add @teplostanski/header-map
 ```
