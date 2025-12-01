@@ -4,9 +4,6 @@
 
 ## Install
 
-`npm install @teplostanski/header-map` also works.
-
-
 ```bash
 pnpm add @teplostanski/header-map
 ```
@@ -21,7 +18,7 @@ hasHeader(req.headers, "x-request-id");
 normalizeHeaders(raw);
 ```
 
-Not a `Headers` polyfill — just the three helpers I reach for in scripts.
+Not a `Headers` polyfill — just the three helpers I reach for when reading CDN headers like `cf-device-type`.
 
 ## License
 
