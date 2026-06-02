@@ -1,1 +1,7 @@
-export { getHeader, hasHeader, normalizeHeaders, type HeaderMap } from "./headers.js";
+export { parseHeaders } from './parse.js'
+export type {
+  HeaderField,
+  HeaderInput,
+  HeaderRecord,
+  ParsedHeaders,
+} from './types.js'
