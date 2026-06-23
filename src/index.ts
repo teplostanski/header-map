@@ -4,5 +4,6 @@ export type {
   HeaderField,
   HeaderInput,
   HeaderRecord,
+  HeadersLike,
   ParsedHeaders,
 } from './types.js'
