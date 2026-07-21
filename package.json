@@ -1,7 +1,9 @@
 {
   "name": "@teplostanski/header-map",
-  "version": "0.2.0",
+  "version": "0.3.0",
+  "description": "Parse HTTP headers into an AST and lowercase maps",
   "type": "module",
+  "sideEffects": false,
   "license": "MIT",
   "author": {
     "name": "Igor Teplostanski",
@@ -9,14 +11,51 @@
     "url": "https://teplostanski.me"
   },
   "packageManager": "pnpm@9.15.0",
-  "engines": { "node": ">=20" },
-  "exports": "./src/index.ts",
-  "scripts": {
-    "typecheck": "tsc -p tsconfig.json",
-    "test": "vitest run"
+  "engines": {
+    "node": ">=22.13"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teplostanski/header-map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teplostanski/header-map/issues"
+  },
+  "homepage": "https://github.com/teplostanski/header-map#readme",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "unbuild",
+    "dev": "vitest",
+    "prepack": "pnpm build",
+    "publint": "publint",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "http",
+    "headers",
+    "parse",
+    "header-map",
+    "cdn"
+  ],
   "devDependencies": {
+    "@types/node": "^22.10.0",
+    "publint": "^0.3.22",
     "typescript": "^5.7.0",
+    "unbuild": "^3.6.1",
     "vitest": "^2.1.0"
   }
 }
