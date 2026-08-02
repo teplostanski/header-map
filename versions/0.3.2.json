@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "name": "@teplostanski/header-map",
+  "version": "0.3.2",
+  "entry": "dist/index.mjs",
+  "bytes": {
+    "raw": 1919,
+    "gzip": 878,
+    "brotli": 793
+  },
+  "bundler": {
+    "name": "esbuild",
+    "version": "0.25.12"
+  },
+  "measuredAt": "2026-08-02T09:34:01.569Z",
+  "gitSha": "e38a76c9369741a4ffb0af5456d7aa09addd97e8",
+  "prerelease": false
+}
