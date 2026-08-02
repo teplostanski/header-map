@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
   "packageName": "@teplostanski/header-map",
-  "updatedAt": "2026-08-02T09:34:01.569Z",
+  "updatedAt": "2026-08-02T10:54:14.955Z",
   "versions": [
-    "0.3.2"
+    "0.3.2",
+    "0.3.4"
   ]
 }
