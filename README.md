@@ -1,5 +1,7 @@
 # header-map
 
+![min+gzip](https://raw.githubusercontent.com/teplostanski/header-map/package-size-cache/badges/latest.svg)
+
 Parse HTTP headers into a small AST and lowercase maps.
 
 Built as a low-level precursor to device-signal work: normalize whatever the

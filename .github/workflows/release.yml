@@ -44,6 +44,12 @@ jobs:
       - name: Publish to npm (trusted publishing)
         run: npm publish --access public
 
+      - name: Record package size badge
+        uses: teplostanski/package-size-badge-action@main
+        with:
+          path: .
+          cache-branch: package-size-cache
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
