@@ -1,6 +1,6 @@
 {
   "name": "@teplostanski/header-map",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "description": "Parse HTTP headers into an AST and lowercase maps",
   "type": "module",
   "sideEffects": false,
