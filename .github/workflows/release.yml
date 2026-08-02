@@ -18,10 +18,12 @@ jobs:
 
       - uses: pnpm/action-setup@v6
 
+      # Do not set registry-url here: setup-node would write
+      # _authToken=${NODE_AUTH_TOKEN} into .npmrc and break npm
+      # trusted publishing (OIDC), which then fails as a misleading E404.
       - uses: actions/setup-node@v7
         with:
           node-version: 24
-          registry-url: https://registry.npmjs.org
           cache: pnpm
 
       - run: npm install -g npm@latest
